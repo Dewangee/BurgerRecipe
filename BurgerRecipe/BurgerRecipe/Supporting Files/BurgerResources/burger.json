@@ -1,0 +1,30 @@
+[
+    {
+        "name":"Veggie Burger",
+        "ingredients":"Guacamole,Tomatoes,Onions",
+        "imageName":"BurgerResources/veggie_burger.jpg",
+        "thumbnailName":"BurgerResources/veggie_burger.jpg",
+        "type":"vegetarian"
+    },
+    {
+        "name":"Southwestern Burger",
+        "ingredients":"Bacon,Cheese,Pickles",
+        "imageName":"BurgerResources/w_burger.jpg",
+        "thumbnailName":"BurgerResources/w_burger.jpg",
+        "type":"meat"
+    },
+    {
+        "name":"Austrian Pretzel Burger",
+        "ingredients":"Pretzel Bun,Pickles,Scrambled Onions",
+        "imageName":"BurgerResources/austrian_pretzel_burger.jpg",
+        "thumbnailName":"BurgerResources/austrian_pretzel_burger.jpg",
+        "type":"meat"
+    },
+    {
+        "name":"Swiss Doubledecker Burger",
+        "ingredients":"Swiss Cheese,Tomatoes,Hash Browns",
+        "imageName":"BurgerResources/double_decker_burger.jpg",
+        "thumbnailName":"BurgerResources/double_decker_burger.jpg",
+        "type":"meat"
+    }
+]

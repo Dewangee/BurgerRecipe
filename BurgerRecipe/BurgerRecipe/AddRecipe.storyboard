@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ncb-Ep-gSP">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--New Recipe-->
+        <scene sceneID="3i1-bh-5dJ">
+            <objects>
+                <viewController id="imy-EY-ZKf" customClass="AddRecipeViewController" customModule="BurgerRecipe" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HKp-IP-JrH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Add all needed ingredients" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="YRj-QP-3ks">
+                                <rect key="frame" x="20" y="142" width="335" height="628"/>
+                                <color key="backgroundColor" systemColor="tertiarySystemFillColor"/>
+                                <color key="textColor" systemColor="tertiaryLabelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter a name for your recipe" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wpr-QS-Lq4">
+                                <rect key="frame" x="20" y="100" width="335" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="O9w-lt-hn2">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="34"/>
+                                    </constraint>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="pNS-ye-zKO"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="pNS-ye-zKO" firstAttribute="trailing" secondItem="YRj-QP-3ks" secondAttribute="trailing" constant="20" id="6Mu-dp-DNQ"/>
+                            <constraint firstItem="wpr-QS-Lq4" firstAttribute="top" secondItem="pNS-ye-zKO" secondAttribute="top" constant="12" id="Ehd-LU-jfa"/>
+                            <constraint firstItem="wpr-QS-Lq4" firstAttribute="leading" secondItem="pNS-ye-zKO" secondAttribute="leading" constant="20" id="RCN-KW-3za"/>
+                            <constraint firstItem="YRj-QP-3ks" firstAttribute="top" secondItem="wpr-QS-Lq4" secondAttribute="bottom" constant="8" id="YgX-b4-4zI"/>
+                            <constraint firstItem="pNS-ye-zKO" firstAttribute="trailing" secondItem="wpr-QS-Lq4" secondAttribute="trailing" constant="20" id="aOX-iV-j1R"/>
+                            <constraint firstItem="pNS-ye-zKO" firstAttribute="bottom" secondItem="YRj-QP-3ks" secondAttribute="bottom" constant="8" id="ao9-LR-eQP"/>
+                            <constraint firstItem="YRj-QP-3ks" firstAttribute="leading" secondItem="pNS-ye-zKO" secondAttribute="leading" constant="20" id="tDq-ms-BYl"/>
+                            <constraint firstItem="YRj-QP-3ks" firstAttribute="top" secondItem="wpr-QS-Lq4" secondAttribute="bottom" constant="8" id="tZb-3j-3yP"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="New Recipe" id="q8V-gy-zaa">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="gZH-Cw-K0Z">
+                            <connections>
+                                <action selector="didTapCancel:" destination="imy-EY-ZKf" id="7G0-OP-Ktb"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="Zbg-5s-q1n">
+                            <connections>
+                                <action selector="didTapSave:" destination="imy-EY-ZKf" id="Lty-SK-pGj"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="ingredientsTextView" destination="YRj-QP-3ks" id="lnT-C1-ZjR"/>
+                        <outlet property="nameTextField" destination="wpr-QS-Lq4" id="cOl-ci-5pF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jZ6-PO-ExY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1440.8" y="87.192118226600982"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ClZ-ZF-ISa">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ncb-Ep-gSP" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="eH9-D0-x5Z">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="imy-EY-ZKf" kind="relationship" relationship="rootViewController" id="KgE-1H-bB8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IGM-My-HIZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="531.8840579710145" y="87.723214285714278"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="tertiaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tertiarySystemFillColor">
+            <color red="0.46274509803921571" green="0.46274509803921571" blue="0.50196078431372548" alpha="0.12" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
